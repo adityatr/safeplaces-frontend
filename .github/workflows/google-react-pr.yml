@@ -40,7 +40,7 @@ jobs:
         ./prepare.sh
 
     - name: Build Testhost Container
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: pathcheck/safeplaces-testhost
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -53,7 +53,7 @@ jobs:
     
 
     - name: Build Frontend Container
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: pathcheck/safeplaces-frontend
         username: ${{ secrets.DOCKER_USERNAME }}
